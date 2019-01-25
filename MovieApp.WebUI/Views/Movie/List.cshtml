@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Movie>
+@{
+    ViewData["Title"] = "Movies List";
+}
+
+
+<div class="album py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                @await Component.InvokeAsync("Menu")
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    @Html.Partial("_MovieList", Model)
+                 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+

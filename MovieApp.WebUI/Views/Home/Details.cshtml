@@ -1,0 +1,27 @@
+﻿@model Movie
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+              @await Component.InvokeAsync("Menu")
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <img src="~/img/@Model.Image" class="card-img-top" alt="@Model.Name">
+                    <div class="card-body">
+                        <h5 class="card-title">@Model.Name</h5>
+                        <p class="card-text">
+                            @Model.Description
+                        </p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+
