@@ -1,4 +1,4 @@
-# Asp.NetCore2MVC-MovieApp
+# Asp Net Core Mvc - Movie App Tutorial
 Asp net Core 2 Mvc App Example
 
 <p align="center">
